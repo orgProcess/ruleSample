@@ -1,0 +1,9 @@
+package com.samplespace.rulesample;
+
+import java.lang.Number;
+
+rule "evalAge"
+	dialect "mvel"
+	when
+	then
+end
