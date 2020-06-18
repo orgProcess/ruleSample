@@ -6,11 +6,72 @@ package com.samplespace.rulesample;
 
 public class Applicant implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Applicant() {
-    }
+	@org.kie.api.definition.type.Label("Age")
+	private Integer age;
+	@org.kie.api.definition.type.Label("Credit Score")
+	private Integer creditScore;
+	@org.kie.api.definition.type.Label("Monthly Income")
+	private Double monthlyIncome;
+	@org.kie.api.definition.type.Label("Name")
+	private java.lang.String name;
 
+	@org.kie.api.definition.type.Label(value = "Yearly Income")
+	private java.lang.Double yearlyIncome;
+
+	public Applicant() {
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.Double getYearlyIncome() {
+		return this.yearlyIncome;
+	}
+
+	public void setYearlyIncome(java.lang.Double yearlyIncome) {
+		this.yearlyIncome = yearlyIncome;
+	}
+
+	public java.lang.Double getMonthlyIncome() {
+		return this.monthlyIncome;
+	}
+
+	public void setMonthlyIncome(java.lang.Double monthlyIncome) {
+		this.monthlyIncome = monthlyIncome;
+	}
+
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public java.lang.Integer getCreditScore() {
+		return this.creditScore;
+	}
+
+	public void setCreditScore(java.lang.Integer creditScore) {
+		this.creditScore = creditScore;
+	}
+
+	public Applicant(java.lang.Integer age, java.lang.Integer creditScore,
+			java.lang.Double monthlyIncome, java.lang.String name,
+			java.lang.Double yearlyIncome) {
+		this.age = age;
+		this.creditScore = creditScore;
+		this.monthlyIncome = monthlyIncome;
+		this.name = name;
+		this.yearlyIncome = yearlyIncome;
+	}
 
 
 
