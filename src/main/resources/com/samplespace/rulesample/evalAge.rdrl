@@ -5,5 +5,7 @@ import java.lang.Number;
 rule "evalAge"
 	dialect "mvel"
 	when
+		applicant : Applicant( age > 18 && age < 70 )
+		Loan( )
 	then
 end
