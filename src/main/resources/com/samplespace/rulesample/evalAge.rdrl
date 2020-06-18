@@ -6,6 +6,7 @@ rule "evalAge"
 	dialect "mvel"
 	when
 		applicant : Applicant( age > 18 && age < 70 )
-		Loan( )
+		loan : Loan( )
 	then
+		loan.setAgePreQual( true );
 end
