@@ -53,7 +53,7 @@
           <factAlias>Applicant</factAlias>
           <expressionAlias>age</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>307.0</columnWidth>
+          <columnWidth>314.5</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +76,7 @@
           <factAlias>Loan</factAlias>
           <expressionAlias>agePreQual</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>307.0</columnWidth>
+          <columnWidth>314.5</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
